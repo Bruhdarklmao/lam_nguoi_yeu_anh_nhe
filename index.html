@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Làm người yêu đp nhé?</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="icon" type="image/png" href="loveee.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heart</title>
+        <link rel="stylesheet" href="./style.css">
+    </head> 
+    <body>
+        </div>
+            <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+            <script src="./script.js"></script>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Đp thích tlinh quá rùi💓</h1>
+                <h1 class = "header_text">Làm người iu đp nhé🥺</h1>
+            <div class="gif_container">
+                <img src="Cat5.gif" height="300" alt="Tặng bé bông hoa nì" title="Tặng bé bông hoa nì">
+                <img src="Cat2.gif" height="300" alt="Tặng bé bông hoa nì" title="Tặng bé bông hoa nì">
+                <img src="Cat4.jfif" height="300" alt="Tặng bé bông hoa nì" title="Tặng bé bông hoa nì">
+        </div>
+        <div class = "buttons">
+            <button class="btn" id = "yesButton" onclick="nextPage()">Oce</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Không đấy</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }                    
+                function moveButton() {
+                    var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                    var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script> 
+        </div>
+    </body> 
+</html>
